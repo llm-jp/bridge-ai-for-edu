@@ -1,1 +1,52 @@
-remote_theme: mmistakes/minimal-mistakes
+# ==========================================
+# サイトの基本情報
+# ==========================================
+title: "BRIDGE教育AI"
+description: "NII、京都大学、大阪教育大学の共同プロジェクト"
+url: "https://github.com/llm-jp" # あなたのOrg名（例: my-org）
+baseurl: "/bridge-ai-for-edu"               # リポジトリ名（先頭に / が必要）
+
+# ==========================================
+# テーマの設定
+# ==========================================
+remote_theme: "mmistakes/minimal-mistakes@4.24.4"
+minimal_mistakes_skin: "default" # スキン選択（"air", "aqua", "contrast", "dirt", "neon" などに変更可能）
+
+# ==========================================
+# レイアウトやナビゲーションの設定
+# ==========================================
+locale: "ja-JP"
+defaults:
+  - scope:
+      path: "" # すべてのページに適用
+    values:
+      layout: "single"      # デフォルトのレイアウト
+      author_profile: true  # 左側にプロフィールサイドバーを表示する
+      sidebar:
+        nav: "docs-sidebar" # サイドバーのナビメニュー名
+
+# ==========================================
+# 左側サイドバー（プロフィール）の内容
+# ==========================================
+author:
+  name: "BRIDGE教育AI"
+  avatar: "/assets/images/logo.png" # 必要ならロゴ画像をここに指定
+  bio: "教育の現場で活躍するAIを作るプロジェクト"
+  location: "東京, 日本"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/llm-jp"
+
+# ==========================================
+# ナビゲーションメニュー（左側または上部に表示）
+# ==========================================
+navigation:
+  - title: "ホーム"
+    url: "/"
+  - title: "研究内容"
+    url: "/index.html" # index.mdに対応
+  - title: "研究業績"
+    url: "/publications/"
+  - title: "メンバー"
+    url: "/members/"
