@@ -1,0 +1,42 @@
+---
+# Minimal Mistakes のスタイルを読み込み、カスタムスタイルを追加します
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ==========================================
+   ニュース一覧のスタイル
+   ========================================== */
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5em;
+}
+
+.news-list li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6em;
+}
+
+.news-list .news-date {
+  font-family: $monospace;
+  font-size: 0.85em;
+  color: mix($text-color, $background-color, 60%);
+  white-space: nowrap;
+}
+
+.news-list .news-cat {
+  font-size: 0.7em;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 0.1em 0.6em;
+  border-radius: 1em;
+  white-space: nowrap;
+}

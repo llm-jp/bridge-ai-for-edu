@@ -1,0 +1,49 @@
+# ==========================================
+# 上部（ヘッダー）のナビゲーションメニュー
+# ==========================================
+main:
+  - title: "ホーム"
+    url: /
+  - title: "研究概要"
+    url: /research/
+  - title: "実施体制"
+    url: /organizations/
+  - title: "ニュース"
+    url: /news/
+  - title: "研究業績"
+    url: /publications/
+  - title: "メンバー"
+    url: /members/
+
+# ==========================================
+# サイドバーのナビゲーションメニュー（main-nav）
+# ==========================================
+main-nav:
+  - title: "プロジェクト"
+    children:
+      - title: "ホーム"
+        url: /
+      - title: "研究概要"
+        url: /research/
+      - title: "実施計画・KPI"
+        url: /roadmap/
+      - title: "出口戦略"
+        url: /outcomes/
+  - title: "実施体制"
+    children:
+      - title: "体制の概要"
+        url: /organizations/
+      - title: "国立情報学研究所（NII）"
+        url: /organizations/nii/
+      - title: "京都大学"
+        url: /organizations/kyoto/
+      - title: "大阪教育大学"
+        url: /organizations/osaka/
+  - title: "情報"
+    children:
+      - title: "ニュース"
+        url: /news/
+      - title: "研究業績"
+        url: /publications/
+      - title: "メンバー"
+        url: /members/

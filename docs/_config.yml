@@ -2,53 +2,109 @@
 # サイトの基本情報
 # ==========================================
 title: "BRIDGE教育AI"
-description: "NII、京都大学、大阪教育大学の共同プロジェクト"
-url: "https://github.com/llm-jp" # あなたのOrg名（例: my-org）
-baseurl: "/bridge-ai-for-edu"               # リポジトリ名（先頭に / が必要）
+subtitle: "教育向けAIモデルの構築と人と協調するエージェントAI教育支援エコシステムの開発"
+description: >-
+  国立情報学研究所（NII）、京都大学、大阪教育大学が連携し、教育特化型AIモデルと
+  学習者支援・教員支援・教育改善エージェントからなる教育支援エコシステムを開発する
+  研究開発プロジェクトです。
+url: "https://llm-jp.github.io"   # GitHub Pages の公開ドメイン
+baseurl: "/bridge-ai-for-edu"     # リポジトリ名（先頭に / が必要）
+repository: "llm-jp/bridge-ai-for-edu"
 
 # ==========================================
 # テーマの設定
 # ==========================================
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"
-minimal_mistakes_skin: "default" # スキン選択（"air", "aqua", "contrast", "dirt", "neon" などに変更可能）
-plugins:
-  - jekyll-include-cache                           # 必須プラグインを有効化
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dirt", "neon" などに変更可能
 
 # ==========================================
-# レイアウトやナビゲーションの設定
+# 言語・地域
 # ==========================================
 locale: "ja-JP"
-defaults:
-  - scope:
-      path: "" # すべてのページに適用
-    values:
-      layout: "single"      # デフォルトのレイアウト
-      author_profile: true  # 左側にプロフィールサイドバーを表示する
-      sidebar:
-        nav: "docs-sidebar" # サイドバーのナビメニュー名
+lang: "ja"
+
+# ==========================================
+# プラグイン
+# ==========================================
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# ==========================================
+# 検索
+# ==========================================
+search: true
+search_full_content: true
+
+# ==========================================
+# ニュース記事（_posts）の一覧・URL設定
+# ==========================================
+paginate: 5
+paginate_path: /news/page:num/
+permalink: /news/:year/:month/:day/:title/
 
 # ==========================================
 # 左側サイドバー（プロフィール）の内容
 # ==========================================
 author:
   name: "BRIDGE教育AI"
-  avatar: "/assets/images/logo.png" # 必要ならロゴ画像をここに指定
-  bio: "教育の現場で活躍するAIを作るプロジェクト"
-  location: "東京, 日本"
+  avatar: "/assets/images/logo.png"
+  bio: "教育の現場で活躍するAIをつくる産学連携プロジェクト"
+  location: "日本"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/llm-jp"
+      url: "https://github.com/llm-jp/bridge-ai-for-edu"
+
+# フッター
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/llm-jp/bridge-ai-for-edu"
 
 # ==========================================
-# ナビゲーションメニュー（左側または上部に表示）
+# 既定レイアウト
 # ==========================================
-navigation:
-  - title: "ホーム"
-    url: "/"
-  - title: "研究内容"
-    url: "/index.html" # index.mdに対応
-  - title: "研究業績"
-    url: "/publications/"
-  - title: "メンバー"
-    url: "/members/"
+defaults:
+  # 通常ページ（_pages, index）
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      sidebar:
+        nav: "main-nav"
+  # ニュース記事（_posts）
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      share: false
+      related: false
+      sidebar:
+        nav: "main-nav"
+
+# インクルードするディレクトリ
+include:
+  - _pages
+
+# ビルド設定
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 除外
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
