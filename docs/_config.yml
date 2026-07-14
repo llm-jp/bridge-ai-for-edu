@@ -50,7 +50,7 @@ permalink: /news/:year/:month/:day/:title/
 # ==========================================
 author:
   name: "BRIDGE教育AI"
-  avatar: "/assets/images/logo.png"
+#  avatar: "/assets/images/logo.png"
   bio: "教育の現場で活躍するAIをつくる産学連携プロジェクト"
   links:
     - label: "GitHub"
