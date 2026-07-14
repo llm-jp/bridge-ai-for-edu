@@ -52,7 +52,6 @@ author:
   name: "BRIDGE教育AI"
   avatar: "/assets/images/logo.png"
   bio: "教育の現場で活躍するAIをつくる産学連携プロジェクト"
-  location: "日本"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
