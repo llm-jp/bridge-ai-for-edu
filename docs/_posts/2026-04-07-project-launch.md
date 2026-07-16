@@ -1,6 +1,6 @@
 ---
 title: "BRIDGE教育AIプロジェクトが始動しました"
-date: 2026-04-01
+date: 2026-04-07
 categories:
   - お知らせ
 tags:
