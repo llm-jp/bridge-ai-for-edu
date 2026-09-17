@@ -8,6 +8,8 @@ main:
     url: /research/
   - title: "実施体制"
     url: /organizations/
+  - title: "シンポジウム"
+    url: /symposium/
   - title: "ニュース"
     url: /news/
   - title: "研究業績"
@@ -39,6 +41,12 @@ main-nav:
         url: /organizations/kyoto/
       - title: "大阪教育大学"
         url: /organizations/osaka/
+  - title: "シンポジウム・イベント"
+    children:
+      - title: "シンポジウム一覧"
+        url: /symposium/
+      - title: "シンポジウム（2026）"
+        url: /symposium/2026/
   - title: "情報"
     children:
       - title: "ニュース"
