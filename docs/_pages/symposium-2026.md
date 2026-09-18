@@ -12,7 +12,7 @@ excerpt: "2026年11月25日（水）一橋講堂にて開催。初年度の研�
 | 項目 | 内容 |
 | :-- | :-- |
 | **日時** | 2026年11月25日（水）13:00 〜 20:00（懇親会を含む） |
-| **会場** | 一橋講堂 1階 特別会議室（東京・千代田区一ツ橋２丁目１−２） |
+| **会場** | 一橋大学一橋講堂 2階中会議場（東京・千代田区一ツ橋２丁目１−２） |
 | **主催** | 国立情報学研究所（NII）／ 京都大学 ／ 大阪教育大学 |
 
 ## 本シンポジウムについて
@@ -58,9 +58,49 @@ AIと教育実践が相互に学習・進化する循環型の学習支援環境
 
 ## 参加申込
 
-参加申込の方法は決まり次第、本ページおよび[ニュース]({{ "/news/" | relative_url }})にてご案内します。
-{: .notice--info}
+以下の申込フォームよりお申し込みください。
+
+[参加申込フォーム（Google フォーム）](https://forms.gle/S6UCZaUBpCgi91UF8){: .btn .btn--primary}
 
 ## アクセス
 
-会場：一橋講堂 1階 特別会議室（〒101-8439 東京都千代田区一ツ橋２丁目１−２ 学術総合センター内）
+会場：一橋大学一橋講堂 2階中会議場（〒101-8439 東京都千代田区一ツ橋２丁目１−２ 学術総合センター内）
+
+会場までのアクセスは、[一橋講堂 アクセスのご案内](https://www.hit-u.ac.jp/hall/accessjp.html)をご覧ください。
+
+## お問い合わせ
+
+本シンポジウムに関するお問い合わせは、下記のメールアドレスまでお願いいたします。
+
+<p id="contact-email">
+  （メールアドレスを読み込んでいます…）
+</p>
+
+<noscript>
+  下記の <code>[at]</code> を <code>@</code> に置き換えてご送信ください：<br>
+  <strong>nii_bridge-edu-ai-jimu[at]nii.ac.jp</strong>
+</noscript>
+
+<script>
+  // 迷惑メール対策：メールアドレスを分割して保持し、閲覧時に組み立てて表示します。
+  (function () {
+    var user = "nii_bridge-edu-ai-jimu";
+    var domain = "nii.ac.jp";
+    var addr = user + "@" + domain;
+    var el = document.getElementById("contact-email");
+    if (el) {
+      var a = document.createElement("a");
+      a.href = "mailto:" + addr;
+      a.textContent = addr;
+      el.textContent = "";
+      el.appendChild(a);
+    }
+  })();
+</script>
+
+<!--
+お問い合わせ先メールアドレス（人が確認する用のメモ）：nii_bridge-edu-ai-jimu[at]nii.ac.jp
+迷惑メール対策のため、ページ上では JavaScript で組み立てて表示しています。
+JavaScript が無効な環境では [at] を @ に置き換える案内を表示します。
+-->
+
