@@ -40,3 +40,48 @@
   border-radius: 1em;
   white-space: nowrap;
 }
+
+/* ==========================================
+   招待講演者（プロフィール）のスタイル
+   ========================================== */
+.speaker {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+  margin: 1.5em 0 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid $border-color;
+}
+
+.speaker:last-of-type {
+  border-bottom: 0;
+}
+
+.speaker .speaker-photo {
+  flex: 0 0 160px;
+  width: 160px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.speaker .speaker-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.speaker .speaker-body > p:first-child {
+  margin-top: 0;
+}
+
+/* スマートフォンでは写真を上に、本文を下に縦積み */
+@media (max-width: 600px) {
+  .speaker {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .speaker .speaker-photo {
+    flex-basis: auto;
+  }
+}
